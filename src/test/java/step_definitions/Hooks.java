@@ -13,12 +13,12 @@ import java.util.concurrent.TimeUnit;
 public class Hooks {
 
     @Before
-   public void setUp(Scenario scenario) {
+
+    public void setUp(Scenario scenario) {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Driver.getDriver().manage().window().maximize();
-   }
-
+    }
 
     @After
     public void tearDown(Scenario scenario) {
@@ -27,5 +27,6 @@ public class Hooks {
             scenario.embed(screenshot, "image/png");
         }
         Driver.closeDriver();
-    }
+  }
+
 }
