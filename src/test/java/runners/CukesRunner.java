@@ -9,13 +9,9 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "json:target/cucumber.json ", "html:target/cucumber"},
         features = "src/test/resources/features",
         glue = "step_definitions",
-<<<<<<< HEAD
-        tags = "@GlossaryFunctionality, @DBDFunctionality",
-=======
         tags = "@TC005",
->>>>>>> master
         dryRun = false
-                )
+        )
 public class CukesRunner {
 
 }
