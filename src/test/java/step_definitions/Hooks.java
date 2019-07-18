@@ -2,7 +2,7 @@ package step_definitions;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
-import org.junit.Before;
+import cucumber.api.java.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.ConfigurationReader;
@@ -26,5 +26,6 @@ public class Hooks {
             scenario.embed(screenshot, "image/png");
         }
         Driver.closeDriver();
-    }
+  }
+
 }
